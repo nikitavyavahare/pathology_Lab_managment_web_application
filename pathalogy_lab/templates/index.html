@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <div class="container">
+        <h2>Pathology Lab Login</h2>
+        <form action="/login" method="POST">
+            <label>Username:</label>
+            <input type="text" name="username" required>
+            
+            <label>Password:</label>
+            <input type="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
